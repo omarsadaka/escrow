@@ -1,0 +1,236 @@
+import { StyleSheet } from "react-native";
+import { hp, wp } from "../../utilis/dimensions";
+const createStyles = (COLORS) =>
+  StyleSheet.create({
+    bg: {
+      flexGrow: 1,
+      backgroundColor: COLORS.bg,
+    },
+    header: {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "space-between",
+      width: "100%",
+      borderBottomLeftRadius: 20,
+      borderBottomRightRadius: 20,
+      overflow: "hidden",
+      backgroundColor: COLORS.header,
+      height: 80,
+    },
+    row: {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    row100: {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "space-between",
+      width: "90%",
+      alignSelf: "center",
+      marginVertical: 10,
+    },
+    icon: {
+      marginHorizontal: 10,
+    },
+    iconMore: {
+      // marginHorizontal: 10,
+      alignSelf: "center",
+    },
+    text: {
+      alignSelf: "center",
+      textAlign: "left",
+      height: "100%",
+      marginHorizontal: wp(5),
+      // marginVertical: 10,
+    },
+    more: {
+      textAlignVertical: "center",
+      textAlign: "center",
+      marginTop: -3,
+      // marginVertical: 10,
+    },
+    text2: {
+      // fontWeight: 'bold',
+      marginVertical: 10,
+    },
+
+    textColored: {
+      color: COLORS.blue,
+      // fontWeight: 'bold',
+      marginVertical: 10,
+    },
+    title: {
+      // fontWeight: 'bold',
+    },
+    addContainer: {
+      // width: 50,
+      // height: 50,
+      borderWidth: 1,
+      color: COLORS.black,
+      borderColor: COLORS.blue,
+      borderRadius: 20,
+      paddingHorizontal: 15,
+      backgroundColor: COLORS.white,
+    },
+    btn: { width: "80%", alignSelf: "center", marginVertical: hp(1) },
+
+    underlineStyleBase: {
+      width: 50,
+      height: 50,
+      borderWidth: 1,
+      color: COLORS.black,
+      borderColor: COLORS.blue,
+      borderRadius: 8,
+      backgroundColor: "white",
+    },
+
+    underlineStyleHighLighted: {
+      borderColor: COLORS.blue,
+      borderRadius: 8,
+    },
+    otp: {
+      width: "80%",
+      height: 80,
+      alignSelf: "center",
+    },
+    subContainer: {
+      width: "80%",
+      alignSelf: "center",
+      height: "64%",
+      backgroundColor: COLORS.lightGrey2,
+      borderRadius: 8,
+      marginVertical: 20,
+      marginTop: 60,
+      justifyContent: "center",
+      alignItems: "center",
+    },
+    applicationPinSubContainer: {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "space-between",
+    },
+
+    logo: {
+      marginHorizontal: 10,
+      alignSelf: "center",
+      // width: 25,
+      // height: 25,
+    },
+    keyboard: {
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "space-around",
+      marginVertical: 8,
+    },
+    bioContainer: {
+      width: "80%",
+      alignSelf: "center",
+      borderColor: COLORS.blue,
+      borderWidth: 0,
+      backgroundColor: COLORS.lightGrey2,
+      borderRadius: 8,
+      marginVertical: 20,
+      paddingVertical: 8,
+    },
+    agreementItem: {
+      width: "90%",
+      alignSelf: "center",
+      alignItems: "center",
+      backgroundColor: COLORS.inputBackGround3,
+      // height:200,
+      borderRadius: 20,
+      marginVertical: 10,
+      paddingBottom: 20,
+    },
+    agreementItem2: {
+      width: "90%",
+      alignSelf: "center",
+      alignItems: "center",
+      backgroundColor: COLORS.inputBackGround3,
+      // height:200,
+      borderRadius: 20,
+      marginVertical: 10,
+      paddingBottom: 20,
+      borderColor: COLORS.header,
+      borderWidth: wp(0.5),
+    },
+    description: {
+      backgroundColor: COLORS.randomDisc,
+      width: "90%",
+      alignSelf: "center",
+      borderRadius: 10,
+      padding: 10,
+    },
+    moreContainer: {
+      width: wp(14),
+      alignSelf: "flex-end",
+      marginTop: 20,
+      marginRight: 20,
+      borderWidth: 1,
+      color: COLORS.black,
+      borderColor: COLORS.babyBlue2,
+      borderRadius: 20,
+      paddingHorizontal: 5,
+      backgroundColor: COLORS.white,
+      flexDirection: "row",
+      justifyContent: "center",
+      alignItems: "center",
+    },
+
+    modalView: {
+      justifyContent: "center",
+      alignItems: "center",
+      backgroundColor: "rgba(52, 52, 52, 0.6)",
+      flex: 1,
+    },
+
+    centeredView: {
+      backgroundColor: COLORS.white,
+      paddingHorizontal: 5,
+      borderRadius: 15,
+      paddingVertical: 15,
+    },
+    centeredView2: {
+      position: "absolute",
+      top: "15%",
+    },
+    agreementName: {
+      width: "90%",
+      marginTop: 40,
+    },
+    agreementDes: {
+      width: "90%",
+      marginTop: 40,
+      height: 150,
+    },
+    agreementInputDes: {
+      height: 150,
+      width: "95%",
+      textAlignVertical: "top",
+    },
+    closeButton: {
+      width: "70%",
+      alignSelf: "center",
+      marginTop: 20,
+      borderWidth: 1,
+      borderColor: COLORS.grey,
+    },
+    closeButtonTxt: {
+      color: COLORS.black,
+      // fontWeight: 'bold',
+    },
+    progressCon: {
+      height: hp(1),
+      width: wp(100),
+      // backgroundColor: "red",
+      marginTop: hp(0.5),
+      marginBottom: hp(0.5),
+    },
+    progressCounter: {
+      height: hp(1),
+      width: "80%",
+      backgroundColor: "green",
+    },
+  });
+export default createStyles;
